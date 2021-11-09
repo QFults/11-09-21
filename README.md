@@ -2,6 +2,6 @@
 
 ## Today's Agenda
 
-- Loops & Conditionals
+- Intro to Loops
 - Intro to Arrays
 - Intro to Objects
