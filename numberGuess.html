@@ -16,14 +16,25 @@
 
     console.log(answer)
 
-    let guess = prompt('Pick a number between 1 & 15')
+    let isCorrect = false
 
-    if (parseInt(guess) === answer) {
-      alert('You guessed it!')
-    } else {
-      alert('Wrong! Refresh to play again.')
+    for (let i = 0; i < 5; i++) {
+      if (isCorrect === false) {
+
+        let guess = prompt('Pick a number between 1 & 15.')
+
+        if (parseInt(guess) === answer) {
+          alert('You guessed it!')
+          isCorrect = true
+        } else {
+          if (i === 4) {
+            alert('Wrong! Game Over! Refresh to play again.')
+          } else {
+            alert('Wrong! Try again.')
+          }
+        }
+      }
     }
-
   </script>
 </body>
 
